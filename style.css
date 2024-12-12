@@ -24,12 +24,13 @@ input{
     border: none;
     border-bottom: 1px solid #5a595c;
 }
-.addTask{
+button{
     background: #c03737;
+    margin: auto;
     padding: 1px;
     border-radius: 8px;
 }
-.addTask:hover{
+button:hover{
     background: #e65757;
 }
 .list ul{
@@ -39,8 +40,8 @@ input{
 }
 .list ul li{
     background-color: rgba(255, 255, 255, 0.3);
-    margin: 10px 0;
-    padding: 10px;
+    margin: 15px 0;
+    padding: 15px;
     border: 5px;
 
 }

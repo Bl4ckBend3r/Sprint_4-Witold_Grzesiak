@@ -11,6 +11,16 @@ function newElement(){
     }
     
     document.getElementById("task").value = ""
-    
+
+    let editBtn = document.createElement("button")
+    editBtn.innerHTML = "Edit"
+    editBtn.className = "editTask"
+    editBtn.onclick = function(){
+        let newTask = prompt("Edit task:", inputValue)
+        if(newTask){
+            li.firstChild.nodeValue = newTask.trim()
+        }
+    }
+    li.appendChild(editBtn)
 
 }

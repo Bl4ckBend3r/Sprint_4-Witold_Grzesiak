@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(36, 56, 233), rgb(6, 236, 141) );
+}
+#header{
+    justify-content: center;
+    background-color: #afafaf46;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+h1{
+    color: #2b2323;
+}
+input{
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #5a595c;
+}
+.addTask{
+    background: #c03737;
+    padding: 1px;
+    border-radius: 8px;
+}
+.addTask:hover{
+    background: #e65757;
+}
+.list ul{
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+.list ul li{
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+    padding: 10px;
+    border: 5px;
+
+}

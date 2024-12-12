@@ -5,43 +5,101 @@ body{
     box-sizing: border-box;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-image: linear-gradient(to bottom right, rgb(36, 56, 233), rgb(6, 236, 141) );
+    color: #333;
 }
 #header{
-    justify-content: center;
+    text-align: center;
     background-color: #afafaf46;
     width: 90%;
     max-width: 500px;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 20px;
-
+    box-shadow: 0px 4px 10px rgba(0,0,0, 0.1;)
 }
 h1{
     color: #2b2323;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
 }
 input{
     outline: 0;
     border: none;
     border-bottom: 1px solid #5a595c;
+    padding: 8px 10px;
+    width: 75%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 button{
     background: #c03737;
-    margin: auto;
-    padding: 1px;
+    padding: 5px 10px;
+    border: none;
     border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 button:hover{
     background: #e65757;
+    transform: scale(1.05);
 }
-.list ul{
+.list ul {
+    list-style: none;
     padding: 0;
     margin-top: 20px;
-    text-align: left;
+    width: 90%;
+    max-width: 500px;
 }
-.list ul li{
-    background-color: rgba(255, 255, 255, 0.3);
-    margin: 15px 0;
-    padding: 15px;
-    border: 5px;
 
+.list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #2b2323;
+}
+
+.taskText {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.editTask,
+.deleteTask {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.editTask {
+    background: #ff8c00;
+    color: white;
+}
+
+.editTask:hover {
+    background: #ffa31a;
+    transform: scale(1.1);
+}
+
+.deleteTask {
+    background: #ff4d4d;
+    color: white;
+}
+
+.deleteTask:hover {
+    background: #e60000;
+    transform: scale(1.1);
 }
